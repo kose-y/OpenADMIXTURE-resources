@@ -31,6 +31,7 @@ sparsities = [size(snparr, 2)]
 #sparsities = 50_000:-1000:1000
 (clusters, snps) = run_SKFR(data_path, clusters, sparsities);
 using DelimitedFiles
+mkpath("../rslts/HO")
 f = open("../rslts/HO/clusters_ho_14pop_baseline", "w")
 writedlm(f, clusters)
 close(f)

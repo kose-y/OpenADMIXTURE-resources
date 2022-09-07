@@ -30,6 +30,7 @@ sparsities = [size(snparr, 2)]
 
 (clusters, snps) = run_SKFR(data_path, clusters, sparsities);
 using DelimitedFiles
-f = open("../rslts/clusters_tgp_8pop_baseline", "w")
+mkpath("../rslts/TGP")
+f = open("../rslts/TGP/clusters_tgp_8pop_baseline", "w")
 writedlm(f, clusters)
 close(f)

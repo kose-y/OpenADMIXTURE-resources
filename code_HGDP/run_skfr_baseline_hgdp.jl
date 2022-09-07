@@ -29,6 +29,7 @@ sparsities = [size(snparr, 2)]
 
 (clusters, snps) = run_SKFR(data_path, clusters, sparsities);
 using DelimitedFiles
+mkpath("../rslts/HGDP")
 f = open("../rslts/HGDP/clusters_hgdp_10pop_baseline", "w")
 writedlm(f, clusters)
 close(f)

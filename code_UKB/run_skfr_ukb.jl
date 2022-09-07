@@ -21,14 +21,14 @@ clusters = 15
 
 s = 80000
 clusters, centers, selectedvec = run_SKFR(data_path, clusters, s);
-
-f = open("clusters_15pop_UKB_$(s)", "w")
+mkpath("../rslts/UKB")
+f = open("../rslts/UKB/clusters_15pop_UKB_$(s)", "w")
 for v in clusters
     println(f, v)
 end
 close(f)
 
-f = open("aims_15pop_UKB_$(s)", "w")
+f = open("../rslts/UKB/aims_15pop_UKB_$(s)", "w")
 for v in selectedvec
     println(f, v)
 end
