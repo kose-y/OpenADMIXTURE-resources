@@ -1,6 +1,6 @@
 # OpenADMIXTURE-resources
 
-This repository contains information for reproducing experiments in the OpenADMIXTURE maunscript:
+This repository contains information for reproducing experiments in the OpenADMIXTURE manuscript:
 
 _Ko S, Chu BB, Peterson D, Okenwa C, Papp JC, Alexander DH, Sobel EM, Zhou H, and Lange KL. Unsupervised Discovery of Ancestry Informative Markers and Genetic Admixture Proportions in Biobank-Scale Data Sets. The American Journal of Human Genetics, in revision._
 
